@@ -8,7 +8,7 @@ function genWallet(){
 
     const transactionCount = 0 
     
-    const futureAddress = utils.getContractAddress({
+    const futureAddress = utils.getContractAddress({ 
         from: newWallet.address,
         nonce: transactionCount
       })
@@ -34,7 +34,7 @@ function init(){
         }
     }
 
-    console.log('found a match ', JSON.stringify(computed))
+    console.log('found a match ', JSON.stringify(computed.wallet.privateKey))
 
 }
 
